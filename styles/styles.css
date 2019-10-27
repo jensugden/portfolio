@@ -7,10 +7,6 @@ header {
   background-color: rgba(0, 183, 213, 0.4);
 }
 
-h1 {
-  color: white
-}
-
 h3 {
   border-style: dotted;
   border-width: 2px;
@@ -27,6 +23,10 @@ aside {
   border-radius: 10px
 }
 
+.white-text {
+  color: white
+}
+
 .blue-text {
   color: rgb(0, 183, 213)
 }
@@ -35,6 +35,10 @@ aside {
   color: rgba(0, 0, 0, .3);
   font-style: italic;
   font-size: 8pt
+}
+
+.min-width {
+  width: 50%
 }
 
 img {
