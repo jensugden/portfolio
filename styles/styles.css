@@ -1,28 +1,103 @@
 * {
-  margin: 10px
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  padding: 25px;
-  background-color: rgba(0, 183, 213, 0.4);
+  height: 10rem;
+  padding: 3rem;
+  background-color: rgb(79, 161, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: rgb(161, 201, 79);
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 h3 {
   border-style: dotted;
-  border-width: 2px;
+  border-width: 3px;
   border-radius: 10px;
-  border-color: rgb(0, 183, 213);
-  width: 100px;
+  border-color: rgb(161, 201, 79);
+  color: rgb(161, 201, 79);
   padding: 5px;
-  text-align: center
+  text-align: center;
+}
+
+main {
+  width: 60%;
+  margin-bottom: 10px;
 }
 
 aside {
-  background-color: rgba(0, 0, 0, 0.1);
+  width: 33%;
+  background-color: rgb(161, 201, 79, .50);
   padding: 5px;
-  border-radius: 10px
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 2%;
+  margin-bottom: 20px;
 }
 
+nav ul li {
+  float: left;
+  list-style: none;
+}
+
+section {
+  clear: both;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+  color: white;
+  background-color: rgb(79, 161, 201);
+  height: 100px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.display-text {
+  font-family: 'Rokkitt', serif;
+}
 .white-text {
   color: white
 }
@@ -37,20 +112,22 @@ aside {
   font-size: 8pt
 }
 
-.min-width {
-  width: 50%
+.float {
+  float: left;
 }
 
 img {
+  height: 200px;
   border-style: solid;
-  border-color: rgba(0, 183, 213, 0.4);
+  border-color: rgb(161, 201, 79);
   border-width: 4px
 }
 
 a:hover {
-  background-color: gray;
+  text-decoration: underline;
 }
 
-a:visited {
-  color: orange;
+.title-size {
+  font-size: 4rem;
+  font-family: 'Rokkitt', serif;
 }
