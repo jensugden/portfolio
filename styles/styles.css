@@ -2,11 +2,11 @@
   margin-left: 5px;
   margin-right: 5px;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-  color: rgb(161, 201, 79);
+  color: rgb(201, 79, 161);
   text-decoration: none;
 }
 
@@ -66,7 +66,8 @@ aside {
   background-color: rgb(161, 201, 79, .50);
   padding: 5px;
   border-radius: 10px;
-  margin-top: 20px;
+  height: auto;
+  margin-top: 40px;
   margin-left: 2%;
   margin-bottom: 20px;
 }
@@ -103,7 +104,7 @@ p {
 }
 
 .display-text {
-  font-family: 'Rokkitt', serif;
+  font-family: 'Nixie One', serif;
 }
 .white-text {
   color: white
@@ -125,9 +126,7 @@ p {
 
 img {
   height: 200px;
-  border-style: solid;
-  border-color: rgb(161, 201, 79);
-  border-width: 4px
+  border-style: none;
 }
 
 a:hover {
@@ -136,5 +135,9 @@ a:hover {
 
 .title-size {
   font-size: 4rem;
-  font-family: 'Rokkitt', serif;
+  font-family: 'Nixie One', serif;
+}
+
+i.fab {
+  color: rgb(201, 79, 161);
 }
