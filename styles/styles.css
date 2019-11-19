@@ -51,6 +51,10 @@ h2 {
   text-align: center;
 }
 
+a:hover {
+  color: rgb(161, 201, 79);
+}
+
 h3 {
   border-style: dotted;
   border-width: 3px;
@@ -60,6 +64,14 @@ h3 {
   padding: 5px;
   font-size: 24px;
   text-align: center;
+}
+
+h3:nth-child(even) {
+  background-color: #FBEEC1;
+}
+
+h3:nth-child(2n+1) {
+  background-color: #8D8741;
 }
 
 main {
@@ -87,6 +99,10 @@ section {
   clear: both;
 }
 
+section a {
+  color: rgb(79, 161, 201);
+  text-decoration: none;
+}
 blockquote {
   font-style: italic;
 }
@@ -108,7 +124,15 @@ p {
 
 img {
   height: 200px;
-  border-style: none;
+  border: 5px solid rgb(201, 79, 161);
+}
+
+.bw {
+  transition: all 1s ease;
+}
+
+.bw:hover {
+  -webkit-filter: grayscale(100%);
 }
 
 .container {
@@ -170,4 +194,9 @@ p.quote {
 
 i.fas {
   color: rgb(201, 79, 161);
+  transition: all 1s ease-out;
+}
+
+i:hover {
+  color: rgb(161, 201, 79);
 }
