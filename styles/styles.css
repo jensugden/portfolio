@@ -55,6 +55,14 @@ a:hover {
   color: rgb(161, 201, 79);
 }
 
+a[href^="mailto"] {
+  color: white;
+}
+
+a[href^="mailto"]:hover {
+  color: rgb(161, 201, 79);
+}
+
 h3 {
   border-style: dotted;
   border-width: 3px;
@@ -66,14 +74,13 @@ h3 {
   text-align: center;
 }
 
-h3:nth-child(even) {
-  background-color: #FBEEC1;
+li:nth-child(even) {
+  color: #FBEEC1;
 }
 
-h3:nth-child(2n+1) {
-  background-color: #8D8741;
+li:nth-child(odd) {
+  color: #8D8741;
 }
-
 
 main {
   width: 60%;
@@ -104,6 +111,7 @@ section a {
   color: rgb(79, 161, 201);
   text-decoration: none;
 }
+
 blockquote {
   font-style: italic;
 }
@@ -128,14 +136,16 @@ img {
   border: 5px solid rgb(201, 79, 161);
 }
 
-.bw {
-  transition: all 1s ease;
+.wiggle img {
+  border-color: rgb(161, 201, 79);
+  transition-property: border-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
-.bw:hover {
-  -webkit-filter: grayscale(100%);
+.wiggle img:hover {
+  border-radius: 50%;
 }
-
 .container {
   display: flex;
   flex-direction: row;
